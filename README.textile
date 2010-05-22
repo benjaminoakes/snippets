@@ -1,2 +1,16 @@
-Stuff I write to test out ideas. Little programs that are worth keeping around.
+h1. Snippets
+
+h2. Description
+
+These are little snippets of programs I write when I test out ideas.  Rather than throw it away, I store them here for the inevitable day where I think "gosh, how did I do that again?"
+
+Feel free to fork and add your own.
+
+h2. Disclaimer
+
+I make no guarantee of any of this code functioning or serving any specific need.  It's here primarily for educational or reference value.
+
+h2. Layout
+
+I've organized the snippets by language, each having its own directory.  The title of each file should give a clue about its purpose.  Keep in mind, however, that some of these are written quickly and aren't necessarily well documented.  (They're "prototype" or "experimental" code.)
 
