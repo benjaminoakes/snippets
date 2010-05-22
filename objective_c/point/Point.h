@@ -1,0 +1,4 @@
+@interface Point
+- inspect;
+@end
+
