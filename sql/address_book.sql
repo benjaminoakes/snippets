@@ -1,3 +1,5 @@
+-- Author: Benjamin Oakes <hello@benjaminoakes.com>
+
 create table people (
   id integer primary key autoincrement,
   first_name varchar(255),
