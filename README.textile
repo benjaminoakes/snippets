@@ -2,7 +2,7 @@ h1. Snippets
 
 h2. Description
 
-These are little snippets of programs I write when I test out ideas.  Rather than throw them away, I store them here for the inevitable day when I think "gosh, how did I do that again?"
+These are little snippets of programs I write when I test out ideas.  Rather than throw them away, I store them here for the inevitable day when I think "gosh, how did I do that again?" or "did that actually work?"
 
 Feel free to fork and add your own.
 
