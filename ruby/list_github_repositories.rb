@@ -11,4 +11,3 @@ response = open('http://github.com/api/v2/yaml/repos/show/' + username)
 repositories = YAML::load(response)
 
 puts "repositories: #{(repositories).inspect}"
-
