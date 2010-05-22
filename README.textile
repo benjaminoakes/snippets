@@ -4,11 +4,15 @@ h2. Description
 
 These are little snippets of programs I write when I test out ideas.  Rather than throw them away, I store them here for the inevitable day when I think "gosh, how did I do that again?" or "did that actually work?"
 
+I write primarily in Ruby, which is reflected here.
+
 Feel free to fork and add your own.
 
 h2. Disclaimer
 
-I make *no guarantee* of any of this code functioning or serving any specific need.  These programs are here primarily for educational or reference value.  That being said, I do hope you find them useful.  (I'd love to hear from you if so.)
+I make *no guarantee* of any of this code functioning or serving any specific need.  (I do try to mark code that doesn't work, though.)  These programs are here primarily for educational or reference value.
+
+That being said, I do hope you find them useful.  (I'd love to hear from you if so.)
 
 h2. Layout
 
