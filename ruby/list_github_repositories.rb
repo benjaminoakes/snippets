@@ -1,3 +1,5 @@
+# See also: http://develop.github.com/p/repo.html
+# 
 # Author: Benjamin Oakes <hello@benjaminoakes.com>
 
 require 'open-uri'
