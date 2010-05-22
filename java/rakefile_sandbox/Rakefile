@@ -1,0 +1,20 @@
+# There are probably better ways of doing this, but I wanted to learn more about Rake.
+# 
+# Author: Benjamin Oakes <hello@benjaminoakes.com>
+
+task 'default' => ['Point.class', 'Main.class'] do
+	sh 'java Main'
+end
+
+file 'Main.class' => ['Main.java'] do
+	sh 'javac Main.java'
+end
+
+file 'Point.class' => ['Point.java'] do
+	sh 'javac Point.java'
+end
+
+file 'Person.class' => ['Person.java'] do
+	sh 'javac Person.java'
+end
+
