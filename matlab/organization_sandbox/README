@@ -1,0 +1,4 @@
+Testing performance on a few different ways of organizing Matlab code that I thought of.  (One attempt was to make "classes" out of inner functions along with something like Ruby's modules.)
+
+End verdict:  Matlab is really slow if you try to organize your code.
+
