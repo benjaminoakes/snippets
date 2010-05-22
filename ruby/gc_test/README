@@ -1,0 +1,3 @@
+I believe this was here to figure out why Rake was holding a bunch of objects in memory.  It turned out to be a bug in RedHat's Ruby, as I recall.
+
+Author: Benjamin Oakes <hello@benjaminoakes.com>

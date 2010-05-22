@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+# Like grep, but in Ruby.
+# 
+# I made this because I had to use Windows at the time (and had Ruby installed).  If you want something like this, I'd recommend `ack` (http://betterthangrep.com/), which is written in Perl.  (I didn't know it existed at the time.)
+# 
+# Author: Benjamin Oakes <hello@benjaminoakes.com>
+
+def show_usage
+  puts "Usage: #{$PROGRAM_NAME} pattern [filename]"
+  exit
+end
+
+if ARGV.empty?
+  show_usage
+end
+
+pattern = Regexp.compile(ARGV.first.freeze)
+
+if 1 == ARGV.length
+  input = STDIN
+elsif 2 == ARGV.length
+  filename = ARGV.last.freeze
+  input = File.open(filename)
+else
+  show_usage
+end
+
+input.each_line do |line|
+  puts line if line.match(pattern)
+end
+
