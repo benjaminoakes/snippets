@@ -1,5 +1,5 @@
 /*
- * Benjamin Oakes <benjamin.oakes@yale.edu>
+ * Benjamin Oakes <hello@benjaminoakes.com>
  */
 
 #import <Point.h>
