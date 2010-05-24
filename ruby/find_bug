@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+# Find a bug by running unit tests until the bug dissapears in the revisions.
+# 
+# It's specifically tailored to Rails and Bazaar (bzr) at the moment.
+# 
+# NOTE Be careful with this script as it calls `rm -rf trunk`.  It's best to make a sandbox folder to run it in.
+# 
+# Author: Benjamin Oakes <benjamin.oakes@yale.edu>
+
+repository_url = ARGV[0]
+
+error_status = false
+revision = 0
+
+until true == error_status
+  revision -= 1
+  system "bzr checkout --revision=#{revision} #{repository_url}"
+  Dir.chdir('trunk')
+  system 'rake db:schema:load RAILS_ENV=test'
+  error_status = system 'ruby test/unit/import_director_test.rb' # 'rake test'
+  Dir.chdir('..')
+  system "rm -rf trunk"
+end
+
+puts "revision: #{(revision).inspect}"
+

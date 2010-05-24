@@ -1,0 +1,9 @@
+Synonyms relative to Ruby (and C, Perl, Bash, etc. in some cases).
+
+Author: Benjamin Oakes <hello@benjaminoakes.com>
+
+`__FILE__`: `mfilename`, [DIR] = fileparts(mfilename('fullpath'));
+`dirname`, `basename`: `fileparts`
+default arguments: see `nargin`
+`$LOAD_PATH`: see `addpath`
+
