@@ -1,0 +1,13 @@
+<!--
+Example for use with erb_sandbox_with_template.rb.
+
+Author: Benjamin Oakes <hello@benjaminoakes.com>
+-->
+
+<ul>
+<!-- I don't think Rails allows the shortened syntax used here -->
+% 3.times do |n|
+    <li>list item <%= n + 1 %></li>
+% end
+</ul>
+
