@@ -1,7 +1,7 @@
 (*
  * Sorting algorithms in SML.
  * 
- * Date:	2007/02/14
+ * Date:  2007/02/14
  * Author: Benjamin Oakes <hello@benjaminoakes.com>
  *)
 
