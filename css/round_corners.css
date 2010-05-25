@@ -1,0 +1,12 @@
+/*
+ * Farily cross-browser.  (IE will be supporting border-radius, but will have square corners until then.)
+ * 
+ * Author: Benjamin Oakes <hello@benjaminoakes.com>
+ */
+
+.round_corners {
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+}
+

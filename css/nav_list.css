@@ -1,0 +1,19 @@
+/*
+ * Styles for a navigation list.
+ * 
+ * Author: Benjamin Oakes <hello@benjaminoakes.com>
+ */
+
+nav {
+  display: block;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+

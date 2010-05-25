@@ -1,0 +1,10 @@
+/*
+ * New HTML5 elements -- force their correct presentation in unsupportive browsers.  IE won't behave properly unless you do some JavaScript tricks.
+ * 
+ * Author: Benjamin Oakes <hello@benjaminoakes.com>
+ */
+
+header, nav, article, section, aside, footer, hgroup {
+  display: block;
+}
+
