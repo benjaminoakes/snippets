@@ -11,5 +11,5 @@ while ($i < 10)
     $i++;
 }
 
-print_r($an_array)
+print_r($an_array);
 
