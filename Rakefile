@@ -19,6 +19,6 @@ task :check_syntax do
   system 'ruby -c ruby/*.rb'
   puts
 
-  # All the others I looked into seemed harder to syntax check.  (At least nothing stood out in the manpage or in a quick Google search.)
+  # All the other languages I looked into seemed harder to syntax check.  (At least nothing stood out in the manpage or in a quick Google search.)
 end
 
