@@ -1,5 +1,5 @@
 /*
- * New HTML5 elements -- force their correct presentation in unsupportive browsers.  IE won't behave properly unless you do some JavaScript tricks.
+ * New HTML5 elements -- force their correct presentation in unsupportive browsers.  IE won't let you style unknown tags unless you do some (pretty simple) JavaScript tricks.
  * 
  * Author: Benjamin Oakes <hello@benjaminoakes.com>
  */
