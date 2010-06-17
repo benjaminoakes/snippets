@@ -1,3 +1,4 @@
+# TODO use "require 'csv'" (or 'faster-csv') instead
 # Author: Benjamin Oakes <hello@benjaminoakes.com>
 
 # Possible cool idea: use an OStruct instead.
