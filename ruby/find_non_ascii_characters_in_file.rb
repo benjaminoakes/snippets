@@ -13,7 +13,7 @@ class String
   def self.ascii?(char)
     ascii_code = char[0]
 
-	  if ascii_code >= 0 && ascii_code <= 126
+    if ascii_code >= 0 && ascii_code <= 126
       return true
     else
       return false
