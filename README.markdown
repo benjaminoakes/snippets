@@ -8,6 +8,8 @@ These are little snippets of programs I write when I test out ideas.  Rather tha
 
 I write primarily in Ruby, which is reflected here.  Feel free to fork and add your own.
 
+This gives a kind of **rough** idea of how much I know about a given language -- the more snippets I've had to make, the more I've probably written.  Even so, I've only made these heavily for the last couple years, they're not complete, and only include languages that I can easily call up in the terminal of my Macs or Linux boxes.
+
 Disclaimer
 ----------
 
