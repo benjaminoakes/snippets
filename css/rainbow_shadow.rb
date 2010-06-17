@@ -1,4 +1,4 @@
-# Quick script for a coworkers birthday.
+# Quick script for a coworkers birthday.  Intentionally over the top.
 # 
 # Author: Benjamin Oakes <hello@benjaminoakes.com>
 
