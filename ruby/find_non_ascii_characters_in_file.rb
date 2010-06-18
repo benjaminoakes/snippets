@@ -1,8 +1,5 @@
 # Author: Benjamin Oakes <hello@benjaminoakes.com>
 
-filename = ARGV[0]
-filename.freeze
-
 class String
   def each_char(&block)
     self.gsub(/./) do |char|
@@ -20,6 +17,14 @@ class String
     end
   end
 end
+
+if ARGV.empty?
+  puts "Usage: ruby #{$PROGRAM_NAME} filename"
+  exit(-1)
+end
+
+filename = ARGV[0]
+filename.freeze
 
 File.open(filename) do |file|
   line_number = 0
@@ -39,6 +44,6 @@ File.open(filename) do |file|
   end
 end
 
-# # For testing
+# # For testing -- run this program on itself
 # non_ascii_string = "”"
 
