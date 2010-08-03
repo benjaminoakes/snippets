@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# Author: Benjamin Oakes <hello@benjaminoakes.com>
 
 require 'rubygems'
 require 'rbosa'

@@ -1,7 +1,10 @@
 #!/usr/bin/ruby
+# Author: Benjamin Oakes <hello@benjaminoakes.com>
+
 require 'rubygems'
 require 'net/smtp'
 require 'mailfactory'
+
 # MailFactory actually implements the builder pattern rather than the factory pattern
 MailBuilder = MailFactory
 
