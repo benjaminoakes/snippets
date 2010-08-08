@@ -1,0 +1,10 @@
+ClrHome
+Disp "Factor"
+Disp ""
+Disp "Enter a number"
+Input x
+For(i,1,x/2,1)
+If x/i=int(x/i)
+disp i
+end
+disp x

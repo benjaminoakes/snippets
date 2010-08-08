@@ -1,0 +1,8 @@
+ClrHome
+Input "a=",a
+Input "b=",b
+Input "c=",c
+.5(a+b+c)->s
+Disp ""
+Disp "s=",s
+Disp "Area: ",sqrt(s(s-a)(s-b)(s-c))

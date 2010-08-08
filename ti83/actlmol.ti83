@@ -1,0 +1,11 @@
+ClrHome
+Disp "Mole finder"
+Disp ""
+Disp "Actual grams? "
+Input " ",g
+Disp ""
+Disp "Formula weight? "
+Input " ",f
+g/f->m
+Disp ""
+Disp "Moles: ",m

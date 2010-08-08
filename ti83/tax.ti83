@@ -1,0 +1,2 @@
+Input x
+disp (x*1.06)

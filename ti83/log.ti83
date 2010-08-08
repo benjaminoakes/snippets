@@ -1,0 +1,23 @@
+ClrHome
+Disp "Logarithm"
+Disp " "
+Disp "Base"
+Input a
+Disp " "
+If a<=0 or A=1
+Then
+Disp "Invalid base"
+Stop
+
+Else
+Disp "x"
+Input x
+Disp " "
+
+If x<=0 or x=1
+Then
+Disp "Invalid x"
+
+Else
+(log(x))/(log(a))|>Frac
+

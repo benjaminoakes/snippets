@@ -1,0 +1,30 @@
+Disp "Need [i] and [g]"
+Disp "Set a"
+Disp "Set n"
+0.5->a
+3->n
+
+Prompt e
+
+Disp "in"
+For(i,1,n)
+Input z
+z->[i](1,i)
+End
+
+Disp "wghts"
+For(i,1,n)
+Input z
+z->[g](1,i)
+End
+
+Disp "Updating..."
+
+For(i,1,n)
+[g](1,i)+a*[i](1,i)*e->[g](1,i)
+End
+
+For(i,1,n)
+Disp [g](1,i)
+End
+

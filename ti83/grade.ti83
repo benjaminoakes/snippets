@@ -1,0 +1,7 @@
+ClrHome
+Disp "Points missed?"
+Input "",p
+Disp " "
+Disp "Points possible?"
+Input "",t
+Disp (t-p)/t*100
