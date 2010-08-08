@@ -1,0 +1,26 @@
+<%
+# Just an idea I had.  This is an ERB file that generates SQL.
+# 
+# Author: Benjamin Oakes <hello@benjaminoakes.com>
+
+def pivot(table_name, id_column_name, pivot_column_name, column_names)
+  select_statments = []
+
+  column_names.each do |column_name|
+    sql = <<EOF
+select
+  #{id_column_name} as #{table_name}_id,
+  '#{column_name}' as #{pivot_column_name},
+  #{column_name} as value
+from #{table_name}
+EOF
+
+    select_statments << sql
+  end
+
+  return select_statments.join("\nunion\n\n") + ';'
+end
+%>
+
+<%= pivot('scale', 'scale_id', 'item', %w[a b c d e f]) %>
+

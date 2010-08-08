@@ -1,0 +1,8 @@
+Author: Benjamin Oakes <hello@benjaminoakes.com>
+
+On Ubuntu:
+----------
+
+sudo apt-get install libsdl1.2-dev libsdl1.2debian
+gem install rubysdl # for the Ruby interface
+
