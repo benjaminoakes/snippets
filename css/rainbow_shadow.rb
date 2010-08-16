@@ -59,7 +59,7 @@ puts <<EOF
 
 </style>
 
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript">
 /**
   * You may use this code for free on any web page provided that 
@@ -338,6 +338,16 @@ myFW2 = new JSFX.Firework(30);
 JSFX.FWLoad=window.onload;
 window.onload=JSFX.FWStart;
 
+function convert() {
+  minutes = parseFloat($('#minutes').val());
+  jps = jps_from_minutes(minutes);
+  $('#conversion-result').html(jps);
+  return false;
+}
+
+function jps_from_minutes(minutes) {
+  return minutes / 127;
+}
 </script>
 
 </head>
@@ -350,6 +360,14 @@ Happy birthday to you!<br />
 </marquee>
 <div class="rainbow">
 Happy birthday, #{name}!
+</div>
+<div>
+<form name="unit-converter" id="unit-converter" onsubmit="return convert()">
+<input type="text" name="minutes" id="minutes" /> minutes
+<input type="button" value="Convert to JPs!" onclick="convert()" />
+</form>
+<br />
+<div style="font-size: 7em;"><span id="conversion-result">0</span> JPs</div>
 </div>
 <marquee>
 Happy birthday to you<br />
