@@ -1,0 +1,10 @@
+ClrHome
+Disp "Percent yield"
+Disp "Finder"
+Disp ""
+Input "Actual? ",a
+Disp ""
+Input "Theo? ",t
+(a/t)*100->y
+Disp ""
+Disp "Yield: ",y,"percent"

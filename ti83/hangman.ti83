@@ -1,0 +1,142 @@
+ClrHome
+Output(3,5,"Hangman")
+Output(4,6,"v 1.1"
+Output(6,3,"(Press Enter)")
+Pause
+
+Lbl s
+
+ClrHome
+
+Input "Word? ", Str1
+Disp " "
+
+If length(Str1) > 16
+Then
+ClrHome
+Disp "There is a","limit of","16 letters","","(Press enter)"
+Pause
+Goto s
+End
+
+Lbl a
+
+Input "Chances? ",x
+
+If X<=0 or X != int(x)
+Then
+ClrHome
+Disp "Invalid number","of chances," ","(Press enter)"
+Pause
+ClrHome
+Goto a
+End
+
+" "->Str3
+" "->Str4
+
+Lbl b
+
+For(i,1,length(Str4),1)
+
+If sub(Str4,i,1)=sub(Str1,1,1)
+Then
+sub(Str4,i,1)->Str0
+Goto c
+End
+If i=length(Str4) and STr0 != sub(Str1,1,1)
+Then
+"-"->Str0
+End
+End
+
+Lbl c
+
+For(q,2,length(Str1),1)
+For(i,1,length(Str4),1)
+If sub(Str4,i,1)=sub(Str1,q,1)
+Then
+Str0+sub(Str4,i,1)->Str0
+End
+If i=length(Str4) and sub(Str0,length(Stro0,1) != sub(Str1,q,1)
+Then
+Str0+"-"->Str0
+End
+End
+End
+
+If Str0=STr1
+Then
+ClrHome
+Output(4,5,"You won!")
+Goto d
+End
+
+While X != 0
+
+ClrHome
+Disp Str0
+Disp " "
+Disp " "
+Output(3,1,"Chance(s):")
+Output(3,12,x)
+Disp Str3
+Disp " "
+Input "Guess? ",Str2
+
+If length(Str2)>1
+Then
+ClrHome
+Disp "One letter,"at a time","","(Press enter)"
+Pause
+Goto b
+End
+
+
+If inString(Str3,Str2) != 0 or inString(Str4,Str2) != 0
+Then
+ClrHome
+Disp "You've tried","",Str2,""
+Disp "(Press enter)"
+Pause
+Else
+If inString(Str1,Str2)=0
+Then
+x-1->x
+Str3+Str2->Str3
+Else
+
+
+Str4+Str2->Str4
+
+Goto b
+
+End
+End
+
+End
+
+ClrHome
+Output(4,5,"You lost")
+
+Lbl d
+Output(5,3,"(Press enter)"
+Pause
+ClrHome
+OUtput(2,1,"The word(s) was:")
+Output(4,1,Str1)
+Output(7,3,"(Press enter)")
+Pause
+ClrHome
+
+Disp ""
+Disp "Play again?"
+
+Input "(Y/N) ",Str5
+
+If Str5="Y"
+Then
+Goto S
+Else
+ClrHome
+

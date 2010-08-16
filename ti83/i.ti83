@@ -1,0 +1,9 @@
+Prompt c
+Prompt p
+Prompt n
+
+p/(p+n)->r
+n/(p+n)->s
+
+-r*(log(r)/log(2))-s*(log(s)/log(2))->a
+Disp c*a

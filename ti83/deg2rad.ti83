@@ -1,0 +1,4 @@
+Input "Degrees? ",d
+d*(pi/180)->r
+Disp r/pi
+Disp "pi"

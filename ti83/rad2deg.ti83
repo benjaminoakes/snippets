@@ -1,0 +1,3 @@
+Input "Radians ?",r
+r*(180/pi)->d
+Disp d

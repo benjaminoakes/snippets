@@ -1,0 +1,5 @@
+Input "a=",a
+Input "b=",b
+Input "c=",c
+Input "d=",d
+Disp (ac)+(bd)

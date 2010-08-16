@@ -1,0 +1,9 @@
+ClrHome
+Prompt p,q
+Disp
+Disp "p={"
+For(i,1,p/2,1)
+If p/i=int(p/i)
+Disp i
+End
+Disp p,"}"

@@ -1,0 +1,9 @@
+ClrHome
+Disp "Distance"
+Disp " "
+Disp "1st coord?"
+Prompt x,y
+Disp "2nd coord?"
+Prompt h,k
+sqrt((x-h)^2+(y-k)^2)->a
+Disp a

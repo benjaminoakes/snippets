@@ -1,0 +1,73 @@
+ClrHome
+Disp "Square root"
+Disp "(Exact value")
+Disp ""
+
+Input x
+
+1->a
+0->r
+
+If x<0
+Then
+1->r
+-x->x
+End
+
+If sqrt(x)=int(sqrt(x))
+Then
+ClrHome
+
+If r=0
+Disp sqrt(x)
+
+If r=1 and x=1
+Disp "i"
+
+If r=1 and x!=1
+Disp sqrt(x),"i"
+
+Else
+
+For(i,x,2,-1)
+
+If x/i^2=int(x/i^2)
+Then
+i*a->a
+x/i^2->x
+End
+
+End
+
+ClrHome
+
+
+If r=0
+Then
+
+If a=1
+Then
+Disp "sqrt(",x,")"o
+
+Else
+Disp a,"sqrt",x")"
+End
+End
+
+If r=1
+Then
+
+If a=1
+Then
+Disp "isqrt(",x,")" 
+
+Else
+If x=1
+Then
+Disp  a,"i"
+
+Else
+Disp a,"isqrt(",x,")"
+End
+End
+End
