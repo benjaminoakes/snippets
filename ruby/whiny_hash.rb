@@ -1,4 +1,8 @@
 # WhinyHash whines when index with non-existent keys (instead of giving nil like Hash)
+#
+# Standalone:
+#
+#   h = Hash.new { |hash, key| raise ArgumentError, "Key not found: #{key.inspect}" }
 class WhinyHash < Hash
   def initialize
     super { |h, k| raise ArgumentError, "Key not found: #{k.inspect}" }
