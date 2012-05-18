@@ -24,6 +24,18 @@ class Bar
   end
 end
 
+class Baz
+  def self.my_private_method
+    "I'm public!"
+  end
+
+  private
+
+  def self.my_method_i_think_is_private
+    "I'm not private!"
+  end
+end
+
 puts "Foo.my_public_method: #{(Foo.my_public_method).inspect}"
 
 begin
@@ -40,9 +52,14 @@ rescue NoMethodError
   puts 'Bar.my_private_method unavailable'
 end
 
+puts "Baz.my_private_method: #{(Baz.my_private_method).inspect}"
+puts "Baz.my_method_i_think_is_private: #{(Baz.my_method_i_think_is_private).inspect}"
+
 # Output:
 #
 #     Foo.my_public_method: "I'm public!"
 #     Foo.my_private_method unavailable
 #     Bar.my_public_method: "I'm public!"
 #     Bar.my_private_method unavailable
+#     Baz.my_private_method: "I'm public!"
+#     Baz.my_method_i_think_is_private: "I'm not private!"
