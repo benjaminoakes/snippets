@@ -1,7 +1,6 @@
 #     ___________________^___________________
 #    /                                       \
 #    |                                       |
-#    |                                       |
 #
 # Do you only need to replace some tokens?  This is all you need (Ruby 1.9+).
 module ThinMustache
