@@ -25,7 +25,7 @@ require 'test/unit'
 class ThinMustacheTest < Test::Unit::TestCase
   def test_render
     template = 'Hi {{name}}, This is a message for you. {{closer}}, {{me}}'
-    doc = { :name => 'Danielle', :closer => 'Love always', :me => 'Ben' }
+    doc = { name: 'Danielle', closer: 'Love always', me: 'Ben' }
 
     assert_equal 'Hi Danielle, This is a message for you. Love always, Ben', ThinMustache.render(template, doc)
   end
