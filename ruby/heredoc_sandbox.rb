@@ -6,4 +6,3 @@ if true
 Hello, world!
   eos
 end
-
